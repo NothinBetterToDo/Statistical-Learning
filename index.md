@@ -1,10 +1,9 @@
-## Box-Cox Transformation
-
-[Box-Cox](#Box-Cox)
+## [Box-Cox Transformation](#Box-Cox)
 
 
-## PCA 
-[Markdown - Link](#PCA)
+
+## [PCA](#PCA) 
+
 
 
 ## Welcome to GitHub Pages
