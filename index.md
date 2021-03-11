@@ -1,6 +1,8 @@
 ## [Box-Cox Transformation](#Box-Cox)
 
+Some machine learning models assume data is normally distributed. Therefore, results have bias when assumption is wrong.
 
+Let $\text{S}_1(N) = \sum_{p=1}^N \text{E}(p)$
 
 ## [PCA](#PCA) 
 
