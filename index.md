@@ -56,7 +56,12 @@ One method of de-trending by using 1-dimensional regression (linear fit):
 
 ## [PCA](#PCA) 
 
-PCA is a dimensionality reduction technique, when we have too many predictors and/or high correlction between some of the predictors. PCA transforms data, by changing the coordinates to remove correlation and ranking coordinates by importance (in order of the amount of variants).
+PCA is a dimensionality reduction technique, when we have too many predictors and/or high correlction between some of the predictors. PCA transforms data, by changing the coordinates to remove correlation and ranking coordinates by importance (in order of the amount of variants). 
+
+There are 2 benefits on concentrating on the first n principal components: 
+- reduce effect of randomness
+- earlier principal components are likely to have higher signal-to-noise ratio 
+
 
 
 
@@ -65,7 +70,7 @@ PCA is a dimensionality reduction technique, when we have too many predictors an
 ### References:
 
 1. [The R Book](https://learning.oreilly.com/library/view/the-r-book/9780470510247/ch009-sec016.html)
-2. [Statistics for Machine Learning](https://learning.oreilly.com/library/view/statistics-for-machine/9781788295758/804095f8-8852-4030-9628-b9cd99ba9ecf.xhtml#:~:text=Principal%20component%20analysis%20(PCA)%20is,the%20points%20onto%20a%20lin)
+2. Statistics for Machine Learning, by Pratap Dangeti, Published by Packt Publishing, 2017
 3. Introduction to Analytics Modeling by Prof.Joel Sokol
 
 
