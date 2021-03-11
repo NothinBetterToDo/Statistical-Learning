@@ -1,6 +1,6 @@
 ## Box-Cox Transformation
 
-[Box-Cox](https://github.com/NothinBetterToDo/Analytics-Modeling/blob/main/Box-Cox)
+[Box-Cox](main/Box-Cox)
 
 (https://github.com/NothinBetterToDo/Analytics-Modeling/blob/main/Box-Cox)
 
