@@ -1,6 +1,6 @@
 ## Box-Cox Transformation
 
-[Box-Cox](https://github.com/NothinBetterToDo/Analytics-Modeling/edit/main/Box-Cox.md)
+[Box-Cox](# PCA)
 
 
 ## PCA 
