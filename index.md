@@ -20,6 +20,8 @@ specified set of explanatory variables is fitted to the following equation as th
 
 
 
+The value of lambda can be positive or negative, but not zero. 
+
 For lambda = 0, the Box-Cox transformation is defined as log(y). 
 
 For lambda = -1, the formula:
@@ -37,7 +39,14 @@ We can use Q-Q plot to check if we need any transformation.
 
 ## [De-Trending](#De-Trending) 
 
-Trend: increase/decrease of data over time and a trend in a time-series could cause issue with a factor-based analysis. 
+Trend: increase/decrease of data over time and a trend in a time-series could cause issue with a factor-based analysis. De-trending can be used on either response, or predictors. 
+
+One method of de-trending by using 1-dimensional regression (linear fit): 
+
+![Detrending Example](https://latex.codecogs.com/gif.latex?y%20%3D%20a_%7B0%7D%20&plus;%20a_%7B1%7Dx)
+
+
+
 
 
 
