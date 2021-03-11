@@ -43,7 +43,10 @@ Trend: increase/decrease of data over time and a trend in a time-series could ca
 
 One method of de-trending by using 1-dimensional regression (linear fit): 
 
-![Detrending Example](https://latex.codecogs.com/gif.latex?y%20%3D%20a_%7B0%7D%20&plus;%20a_%7B1%7Dx)
+![Linear Fit Example](https://latex.codecogs.com/gif.latex?y%20%3D%20a_%7B0%7D%20&plus;%20a_%7B1%7Dx)
+
+
+
 
 
 
