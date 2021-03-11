@@ -1,6 +1,6 @@
 ## Box-Cox Transformation
 
-[Box-Cox](# PCA)
+[Box-Cox](#Box-Cox)
 
 
 ## PCA 
