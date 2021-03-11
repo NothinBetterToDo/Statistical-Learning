@@ -8,9 +8,13 @@ A Box-Cox transformation, is one of the methods that can deal with heteroscedast
 The idea is to find best value of ![lambda](https://latex.codecogs.com/gif.latex?%5Clambda):
 
 ```markdown
-t(y), or transform vector of Y, so that it can become closer to normal distribution. 
+t(y), or transform vector of Y, so that it can become closer to normal distribution. We will need to find the power transformation, lambda, that maximizes the likelihood when a specified set of explanatory variables is fitted to the following equation as the response: 
 ```
+
 ![Power Transformation](https://latex.codecogs.com/gif.latex?t%28y%29%20%3D%20%5Cfrac%7B%28y%5E%7B%5Clambda%7D-1%29%7D%7B%5Clambda%20%7D)
+
+
+
 
 
 
@@ -22,12 +26,18 @@ We can use Q-Q plot to check if we need any transformation.
 
 ## [De-Trending](#De-Trending) 
 
-Trend: increase/decrease of data over time
-
+Trend: increase/decrease of data over time and a trend in a time-series could cause issue with a factor-based analysis. 
 
 
 
 ## [PCA](#PCA) 
+
+
+
+### References:
+
+1. [The R Book](https://learning.oreilly.com/library/view/the-r-book/9780470510247/ch009-sec016.html)
+2. Introduction to Analytics Modeling by Prof.Joel Sokol
 
 
 
