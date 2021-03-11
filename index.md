@@ -4,9 +4,7 @@
 
 
 ## PCA 
-
-(#Box-Cox)
-
+[Markdown - Link](#PCA)
 
 
 ## Welcome to GitHub Pages
