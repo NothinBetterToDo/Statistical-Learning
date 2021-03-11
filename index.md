@@ -1,8 +1,15 @@
 ## [Box-Cox Transformation](#Box-Cox)
 
-Some machine learning models assume data is normally distributed. Therefore, results have bias when assumption is wrong.
+Some machine learning models assume data is normally distributed. Therefore, results will be biased when this assumption is not met. The unequal variance in a data is called heteroscedasticity. Higher variance in certain data points will make those estimation erros larger and push a model to fit those points. 
 
-![Equ](https://latex.codecogs.com/gif.latex?%5Cfrac%7By%5E%7B%5Cgamma%20%7D%20-%201%20%7D%7B%5Cgamma%20%7D)
+A Box-Cox transformation, is one of the methods that can deal with heteroscedasticity. This approach is a logarithmic transformation, that shrinks the larger range to reduce its variability and stretches out smaller range to enlarge its variability. 
+
+The idea is to find best value of ![lambda](https://latex.codecogs.com/gif.latex?%5Clambda)
+
+![Power Transformation](https://latex.codecogs.com/gif.latex?t%28y%29%20%3D%20%5Cfrac%7B%28y%5E%7B%5Clambda%7D-1%29%7D%7B%5Clambda%20%7D)
+- t(y), or transform vector of Y, can become close to normal distribution 
+
+We can use Q-Q plot to check if we need any transformation. 
 
 
 ## [PCA](#PCA) 
