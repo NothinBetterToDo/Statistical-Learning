@@ -4,6 +4,7 @@ Some machine learning models assume data is normally distributed. Therefore, res
 
 A Box-Cox transformation, is one of the methods that can deal with heteroscedasticity. This approach is a logarithmic transformation, that shrinks the larger range to reduce its variability and stretches out smaller range to enlarge its variability. 
 
+```markdown
 The idea is to find best value of ![lambda](https://latex.codecogs.com/gif.latex?%5Clambda):
 
 t(y), or transform vector of Y, so that it can become closer to normal distribution. 
@@ -13,8 +14,15 @@ t(y), or transform vector of Y, so that it can become closer to normal distribut
 
 
 
-
+```
 We can use Q-Q plot to check if we need any transformation. 
+
+
+
+## [De-Trending](#De-Trending) 
+
+Trend: increase/decrease of data over time
+
 
 
 
