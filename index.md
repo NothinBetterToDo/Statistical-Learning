@@ -2,7 +2,13 @@
 
 Some machine learning models assume data is normally distributed. Therefore, results have bias when assumption is wrong.
 
-Let $\text{S}_1(N) = \sum_{p=1}^N \text{E}(p)$
+\begin{equation*}
+\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}
+\mathbf{i} & \mathbf{j} & \mathbf{k} \\
+\frac{\partial X}{\partial u} &  \frac{\partial Y}{\partial u} & 0 \\
+\frac{\partial X}{\partial v} &  \frac{\partial Y}{\partial v} & 0
+\end{vmatrix}  
+\end{equation*}
 
 ## [PCA](#PCA) 
 
