@@ -2,6 +2,7 @@
 
 [Box-Cox](https://github.com/NothinBetterToDo/Analytics-Modeling/blob/main/Box-Cox)
 
+https://github.com/NothinBetterToDo/Analytics-Modeling/main/Box-Cox
 
 ## PCA 
 
