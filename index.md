@@ -9,13 +9,22 @@ The idea is to find best value of ![lambda](https://latex.codecogs.com/gif.latex
 
 ```markdown
 t(y), or transform vector of Y, so that it can become closer to normal distribution. 
+```
 We will need to find the power transformation, lambda, that maximizes the likelihood when a 
 specified set of explanatory variables is fitted to the following equation as the response: 
-```
 
 ![Power Transformation](https://latex.codecogs.com/gif.latex?t%28y%29%20%3D%20%5Cfrac%7B%28y%5E%7B%5Clambda%7D-1%29%7D%7B%5Clambda%20%7D)
 
 
+
+
+
+
+For lambda = 0, the Box-Cox transformation is defined as log(y). 
+
+For lambda = -1, the formula:
+
+![Example 1](https://latex.codecogs.com/gif.latex?%5Cfrac%7By%5E%7B-1%7D-1%7D%7B-1%7D%20%3D%20%5Cfrac%7B%5Cfrac%7B1%7D%7By%7D%20-%201%7D%7B-1%7D%20%3D%201%20-%20%5Cfrac%7B1%7D%7By%7D)
 
 
 
