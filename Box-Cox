@@ -1,5 +1,6 @@
 ## Box-Cox Transformation
 
+Some machine learning models assume data is normally distributed. Therefore, results have bias when assumption is wrong. 
 
 
 
