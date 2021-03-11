@@ -2,9 +2,7 @@
 
 Some machine learning models assume data is normally distributed. Therefore, results have bias when assumption is wrong.
 
-```markdown
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" title="\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" />
-```
+![Equ](https://latex.codecogs.com/gif.latex?%5Cfrac%7By%5E%7B%5Cgamma%20%7D%20-%201%20%7D%7B%5Cgamma%20%7D)
 
 
 ## [PCA](#PCA) 
