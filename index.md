@@ -67,10 +67,10 @@ Principal components are orthogonal with each other.
 
 Question: A = n x n matrix. A scalar ![lambda](https://latex.codecogs.com/gif.latex?%5Clambda) is called an eigenvalue of A, if there is a non-zero vector x such that Ax = ![lambda](https://latex.codecogs.com/gif.latex?%5Clambda)x. Such a vector x is called an eigenvector of A corresponding to ![lambda](https://latex.codecogs.com/gif.latex?%5Clambda). 
 
-Show that x = ![x](https://latex.codecogs.com/gif.latex?%5Cbegin%7Bbmatrix%7D%202%5C%5C1%5C%5C%20%5Cend%7Bbmatrix%7D) is an eigenvector of A = ![A](https://latex.codecogs.com/gif.latex?%5Cbigl%28%5Cbegin%7Bsmallmatrix%7D%203%20%26%202%5C%5C%203%20%26%20-2%5C%5C%20%5Cend%7Bsmallmatrix%7D%5Cbigr%29) corresponding to ![lambda](https://latex.codecogs.com/gif.latex?%5Clambda) = 4. 
+Show that x = ![x](https://latex.codecogs.com/gif.latex?%5Cbar%7Bx%7D) is an eigenvector of A = ![A](https://latex.codecogs.com/gif.latex?A%5Cbar%7Bx%7D%20%3D%20%5Clambda%20%5Cbar%7Bx%7D) corresponding to ![lambda](https://latex.codecogs.com/gif.latex?%5Clambda) = 4. 
 
 
-![Eq1](https://latex.codecogs.com/gif.latex?Ax%20%3D%20%5Clambda%20x)
+![Eq1](https://latex.codecogs.com/gif.latex?A%5Cbar%7Bx%7D%20%3D%20%5Clambda%20%5Cbar%7Bx%7D)
 
 ![Eq2](https://latex.codecogs.com/gif.latex?%5Cbegin%7Bpmatrix%7D%203%20%26%202%5C%5C%203%20%26%20-2%5C%5C%20%5Cend%7Bpmatrix%7D%20%5Cbegin%7Bpmatrix%7D%202%5C%5C%201%5C%5C%20%5Cend%7Bpmatrix%7D%20%3D%204%5Cbegin%7Bpmatrix%7D%202%5C%5C%201%5C%5C%20%5Cend%7Bpmatrix%7D)
 
@@ -80,6 +80,8 @@ Show that x = ![x](https://latex.codecogs.com/gif.latex?%5Cbegin%7Bbmatrix%7D%20
 
 
 This means if lambda is an eigenvalue of A, and x is an eigenvector belonging to lambda, any non-zero multiple of x will be an eigenvector. 
+
+
 
 
 
