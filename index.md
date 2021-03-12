@@ -81,6 +81,7 @@ Principal components are orthogonal with each other. The steps are outlined belo
 
 Doing so, PCA eliminates correlation between factors. If want to have fewer variables, only include the first n principal components. We can also deal with non-linear functions using kernels (similar to SVM modeling). 
 
+
 Decode unscale coefficients:
 
 ![Y 1step](https://latex.codecogs.com/gif.latex?%5Chat%7BY%7D%20%3D%20%5Chat%7B%5Cbeta%7D%20&plus;%20%5Csum_%7Bk%7D%5E%7Bi%3D1%7D%20%5Chat%7B%5Cbeta_%7Bi%7D%20%7D%20*%20z_%7Bi%7D)
@@ -90,7 +91,12 @@ Decode unscale coefficients:
 
 
 
-![Y_3step]()
+![Y_3step](https://latex.codecogs.com/gif.latex?%5Chat%7BY%7D%20%3D%20%5Chat%7B%5Cbeta%7D%20&plus;%20%5Csum_%7Bk%7D%5E%7Bi%3D1%7D%20%5Cfrac%7B%5Chat%7B%5Cbeta%20x_%7Bi%7D%7D%7D%7Bs_%7Bi%7D%7D%20-%20%5Csum_%7Bk%7D%5E%7Bi%3D1%7D%20%5Cleft%20%28%20%5Cfrac%7B%5Chat%7B%5Cbeta%20%5Cbar%7Bx_%7Bi%7D%7D%7D%7D%20%7Bs_%7Bi%7D%7D%20%5Cright%20%29)
+
+
+![Y_4step](https://latex.codecogs.com/gif.latex?%5Chat%7BY%7D%20%3D%20%5Cbeta%20-%20%5Csum_%7Bk%7D%5E%7Bi%3D1%7D%20%5Cleft%20%28%20%5Cfrac%7B%5Chat%7B%5Cbeta%20%5Cbar%7Bx_%7Bi%7D%7D%7D%7D%7Bs_%7Bi%7D%7D%20%5Cright%20%29%20&plus;%20%5Csum_%7Bk%7D%5E%7Bi%3D1%7D%20%5Cleft%20%28%20%5Cfrac%7B%5Chat%7B%5Cbeta%20_%7Bi%7D%7D%7D%7Bs_%7Bi%7D%7D%20x_%7Bi%7D%5Cright%20%29)
+
+
 
 
 
