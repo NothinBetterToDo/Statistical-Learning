@@ -159,7 +159,9 @@ Sum of squared errors:
 
 
 
+
 ![sse2](https://latex.codecogs.com/gif.latex?%3D%20%5Csum%20%5Cleft%20%28%20y_%7Bi%7D%20-%20%28a_%7B0%7D%20&plus;%20a_%7B1%7Dx_%7Bi%7D%29%20%5Cright%20%29%5E%7B2%7D)
+
 
 
 
