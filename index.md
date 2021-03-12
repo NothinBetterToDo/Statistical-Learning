@@ -81,8 +81,16 @@ Principal components are orthogonal with each other. The steps are outlined belo
 
 Doing so, PCA eliminates correlation between factors. If want to have fewer variables, only include the first n principal components. We can also deal with non-linear functions using kernels (similar to SVM modeling). 
 
+Decode unscale coefficients:
+
+![Y 1step](https://latex.codecogs.com/gif.latex?%5Chat%7BY%7D%20%3D%20%5Chat%7B%5Cbeta%7D%20&plus;%20%5Csum_%7Bk%7D%5E%7Bi%3D1%7D%20%5Chat%7B%5Cbeta_%7Bi%7D%20%7D%20*%20z_%7Bi%7D)
 
 
+![Y_2step](https://latex.codecogs.com/gif.latex?%5Chat%7BY%7D%20%3D%20%5Chat%7B%5Cbeta%20%7D%20&plus;%20%5Csum_%7Bk%7D%5E%7Bi%3D1%7D%20%5Chat%7B%5Cbeta%20_%7Bi%7D%7D%20*%20%28%5Cfrac%7Bx_%7Bi%7D%20-%20%5Cbar%7Bx%7D%20%7D%7Bs_%7Bi%7D%7D%29)
+
+
+
+![Y_3step]()
 
 
 
@@ -110,6 +118,8 @@ Show that x = ![x](https://latex.codecogs.com/gif.latex?%5Cbar%7Bx%7D) is an eig
 This means if lambda is an eigenvalue of A, and x is an eigenvector belonging to lambda, any non-zero multiple of x will be an eigenvector. 
 
 
+
+
 ![Assuming](https://latex.codecogs.com/gif.latex?Assuming%3A%20A%5Cbar%7Bx%7D%20%3D%20%5Clambda%20%5Cbar%7Bx%7D)
 
 
@@ -128,6 +138,8 @@ This means if lambda is an eigenvalue of A, and x is an eigenvector belonging to
 1. [The R Book](https://learning.oreilly.com/library/view/the-r-book/9780470510247/ch009-sec016.html)
 2. Statistics for Machine Learning, by Pratap Dangeti, Published by Packt Publishing, 2017
 3. Introduction to Analytics Modeling by Prof.Joel Sokol
+
+
 
 
 
