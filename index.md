@@ -64,7 +64,7 @@ There are 2 benefits on concentrating on the first n principal components:
 
 Principal components are orthogonal with each other. 
 
-Question: A = n x n matrix. A scalar ![lambda](https://latex.codecogs.com/gif.latex?%5Clambda) is called an eigenvalue of A, if there is a non-zero vector x such that Ax = lambda * x. Such a vector x is called an eigenvector of A corresponding to lambda. 
+Question: A = n x n matrix. A scalar ![lambda](https://latex.codecogs.com/gif.latex?%5Clambda) is called an eigenvalue of A, if there is a non-zero vector x such that Ax = ![lambda](https://latex.codecogs.com/gif.latex?%5Clambda)x. Such a vector x is called an eigenvector of A corresponding to ![lambda](https://latex.codecogs.com/gif.latex?%5Clambda). 
 
 
 
