@@ -143,9 +143,11 @@ This means if lambda is an eigenvalue of A, and x is an eigenvector belonging to
 
 It can be used to determine how do systems work, and what will happen in the future. 
 
+We can determine whether the fitted line is good or not, by looking at the sum of squared errors. 
+
 Data point i prediction error: 
 
-![pred error] (https://latex.codecogs.com/gif.latex?y%20-%20%5Chat%7By%7D%20%3D%20y_%7Bi%7D%20-%20%28a_%7B0%7D%20&plus;%20a_%7B1%7D%20x_%7Bi%7D%29)
+![pred error](https://latex.codecogs.com/gif.latex?y%20-%20%5Chat%7By%7D%20%3D%20y_%7Bi%7D%20-%20%28a_%7B0%7D%20&plus;%20a_%7B1%7D%20x_%7Bi%7D%29)
 
 
 
@@ -153,6 +155,7 @@ Data point i prediction error:
 Sum of squared errors: 
 
 ![sse1](https://latex.codecogs.com/gif.latex?%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%20%5Cleft%20%28%20y_%7Bi%7D%20-%20%5Chat%7By_%7Bi%7D%7D%20%5Cright%20%29%5E%7B2%7D)
+
 
 
 
