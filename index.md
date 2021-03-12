@@ -273,7 +273,7 @@ Similar to AIC:
 - Only use BIC when data points > parameters 
 
 When comparing 2 models on the same dataset by their BIC
-- difference |BIC1 - BIC2| > 10, smaller BIC is **very likely** better
+- difference > 10, smaller BIC is **very likely** better
 - 6 < difference < 10, then smaller BIC is **likely** better
 - 2 < difference < 6, then smaller BIC is **somewhat likely** better
 - 0 < difference < 2, then smaller BIC is **slightly likely** better 
