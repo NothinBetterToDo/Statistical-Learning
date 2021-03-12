@@ -154,16 +154,17 @@ We can also adjust the data so the fit is linear:
 
 We can determine whether the fitted line is good or not, by looking at the sum of squared errors. The coefficients for x  change as we move the line, and the best-fit regression line is the one that minimizes sum of squared errors. The sum of squared errors (SSE) is a convex quadratic function and we need to minimize it, by taking partial derivatives of the sum of squared errors term with respect to each constant & set to zero and solve these equations simultaneously to find the minimum SSE.
 
-
+```
 Data point i prediction error: 
+```
 
 ![pred error](https://latex.codecogs.com/gif.latex?y%20-%20%5Chat%7By%7D%20%3D%20y_%7Bi%7D%20-%20%28a_%7B0%7D%20&plus;%20a_%7B1%7D%20x_%7Bi%7D%29)
 
 
 
-
+```
 Sum of squared errors: 
-
+```
 ![sse1](https://latex.codecogs.com/gif.latex?%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%20%5Cleft%20%28%20y_%7Bi%7D%20-%20%5Chat%7By_%7Bi%7D%7D%20%5Cright%20%29%5E%7B2%7D)
 
 
@@ -179,12 +180,12 @@ How can we measure model quality?
 **Likelihood**
 
 The most basic is likelihood. We can measure the probability (density) for any parameter set, and whichever set of parameters gives the highest probability density is called the maximum likelihood (best fit set of parameters). 
-
+```
 Assume:
 - error is normally distributed with mean = 0, and variant sigma squared. 
 - independent
 - identically distributed
-
+```
 Then the set of parameters that minimizes the SSE is the maximum likelihood fit (MLE). 
 
 ![SSE](https://latex.codecogs.com/gif.latex?Minimize%20%5Csum_%7Bn%7D%5E%7Bi%3D1%7D%5Cleft%20%28%20z_%7Bi%7D%20-%20%28a_%7B0%7D%20&plus;%20%5Csum_%7Bm%7D%5E%7Bj%3D1%7D%20a_%7Bj%7Dx_%7Bij%7D%29%5E%7B2%7D%20%5Cright%20%29)
@@ -203,10 +204,10 @@ We can use likelihood to compare 2 different models by using the likelihood rati
 **Akaike Information Criterion(AIC)** 
 
 Aikaike's information criterion (AIC) is known as a penalized log-likelihood. Adding extra parameters can lead to overfitting to fit random effects. Smallest AIC is preferred - encourages fewer parameters k, and higher likelihood.
-
+```
 - L*: maximum likelihood value
 - k: number of parameters being estimated
-
+```
 
 
 ![AIC](https://latex.codecogs.com/gif.latex?AIC%20%3D%202k%20-%202%20ln%20%28L%5E%7B*%7D%29)
@@ -271,12 +272,13 @@ n  = number of data points
 Similar to AIC:
 - penalty term for BIC > AIC, so encourages models with fewer parameters than AIC does
 - Only use BIC when data points > parameters 
-
+```
 When comparing 2 models on the same dataset by their BIC
 - difference > 10, smaller BIC is **very likely** better
 - 6 < difference < 10, then smaller BIC is **likely** better
 - 2 < difference < 6, then smaller BIC is **somewhat likely** better
 - 0 < difference < 2, then smaller BIC is **slightly likely** better 
+```
 
 The difference between AIC and BIC:
 - AIC: frequentist point of view
