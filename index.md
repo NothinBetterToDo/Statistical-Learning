@@ -60,7 +60,13 @@ PCA is a dimensionality reduction technique, when we have too many predictors an
 
 There are 2 benefits on concentrating on the first n principal components: 
 - reduce effect of randomness
-- earlier principal components are likely to have higher signal-to-noise ratio 
+- earlier principal components are likely to have higher signal-to-noise ratio (driven by actual effects, than random effects)
+
+Principal components are orthogonal with each other. 
+
+Question: A = n x n matrix. A scalar ![lambda](https://latex.codecogs.com/gif.latex?%5Clambda) is called an eigenvalue of A, if there is a non-zero vector x such that Ax = lambda * x. Such a vector x is called an eigenvector of A corresponding to lambda. 
+
+
 
 
 
@@ -72,6 +78,10 @@ There are 2 benefits on concentrating on the first n principal components:
 1. [The R Book](https://learning.oreilly.com/library/view/the-r-book/9780470510247/ch009-sec016.html)
 2. Statistics for Machine Learning, by Pratap Dangeti, Published by Packt Publishing, 2017
 3. Introduction to Analytics Modeling by Prof.Joel Sokol
+
+
+
+
 
 
 
