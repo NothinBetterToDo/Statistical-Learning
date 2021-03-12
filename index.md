@@ -260,12 +260,13 @@ It is much more likely that the first model is better.
 
 
 
+```
 L* = maximum likelihood value
 
 k  = number of parameters being estimated
 
 n  = number of data points 
-
+```
 
 Similar to AIC:
 - penalty term for BIC > AIC, so encourages models with fewer parameters than AIC does
