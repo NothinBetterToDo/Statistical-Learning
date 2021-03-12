@@ -143,7 +143,8 @@ This means if lambda is an eigenvalue of A, and x is an eigenvector belonging to
 
 It can be used to determine how do systems work, and what will happen in the future. 
 
-We can determine whether the fitted line is good or not, by looking at the sum of squared errors. 
+We can determine whether the fitted line is good or not, by looking at the sum of squared errors. The coefficients for x  change as we move the line, and the best-fit regression line is the one that minimizes sum of squared errors. The sum of squared errors (SSE) is a convex quadratic function and we need to minimize it, by taking partial derivatives of the sum of squared errors term with respect to each constant & set to zero and solve these equations simultaneously to find the minimum SSE.
+
 
 Data point i prediction error: 
 
@@ -164,6 +165,35 @@ Sum of squared errors:
 
 
 
+How can we measure model quality?
+
+**Likelihood**
+The most basic is likelihood. We can measure the probability (density) for any parameter set, and whichever set of parameters gives the highest probability density is called the maximum likelihood (best fit set of parameters). 
+
+Assume:
+- error is normally distributed with mean = 0, and variant sigma squared. 
+- independent
+- identically distributed
+
+Then the set of parameters that minimizes the SSE is the maximum likelihood fit (MLE). 
+
+![SSE](https://latex.codecogs.com/gif.latex?Minimize%20%5Csum_%7Bn%7D%5E%7Bi%3D1%7D%5Cleft%20%28%20z_%7Bi%7D%20-%20%28a_%7B0%7D%20&plus;%20%5Csum_%7Bm%7D%5E%7Bj%3D1%7D%20a_%7Bj%7Dx_%7Bij%7D%29%5E%7B2%7D%20%5Cright%20%29)
+
+
+
+
+
+where xij = observed predictor value, a0 - am = parameters to fit. 
+
+We can use likelihood to compare 2 different models by using the likelihood ratio and conduct a hypothesis test. 
+
+
+
+
+**AIC** 
+Aikaike's information criterion (AIC) is known as a penalized log-likelihood.  
+
+
 
 
 
@@ -171,9 +201,9 @@ Sum of squared errors:
 
 ### References:
 
-1. [The R Book](https://learning.oreilly.com/library/view/the-r-book/9780470510247/ch009-sec016.html)
-2. Statistics for Machine Learning, by Pratap Dangeti, Published by Packt Publishing, 2017
-3. Introduction to Analytics Modeling by Prof.Joel Sokol
+1. The R Book, by Michael J.Crawley, Published by Wiley, 2007.
+2. Statistics for Machine Learning, by Pratap Dangeti, Published by Packt Publishing, 2017.
+3. Introduction to Analytics Modeling by Prof.Joel Sokol.
 
 
 
