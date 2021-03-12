@@ -145,6 +145,13 @@ It can be used to determine how do systems work (descriptive), and what will hap
 
 But we need to take note that correlation does not mean causation. So just because there's a correlation and our regression model can make good predictions, it does not mean the predictors caused the response. 
 
+We can also adjust the data so the fit is linear:
+- Quadratic regression 
+- Response transform, log(y)
+- Box-Cox transformation
+- Variable interaction, add interaction term e.g. x1x2
+
+
 We can determine whether the fitted line is good or not, by looking at the sum of squared errors. The coefficients for x  change as we move the line, and the best-fit regression line is the one that minimizes sum of squared errors. The sum of squared errors (SSE) is a convex quadratic function and we need to minimize it, by taking partial derivatives of the sum of squared errors term with respect to each constant & set to zero and solve these equations simultaneously to find the minimum SSE.
 
 
@@ -235,6 +242,8 @@ Example:
 
 
 
+
+
 ![AIC Example 2](https://latex.codecogs.com/gif.latex?e%5E%7B%5Cfrac%7B80-85%7D%7B2%7D%7D%20%5Capprox%208.2%25)
 
 
@@ -269,6 +278,25 @@ When comparing 2 models on the same dataset by their BIC
 The difference between AIC and BIC:
 - AIC: frequentist point of view
 - BIC: Bayesian point of view
+
+
+**Regression Output**
+
+- P-values:
+  - if > 0.05, remove the attribute. 
+  - Higher thresholds, more factors can be included but might include irrelevant factor
+  - Lower thresholds, less factors can be included and might leave out relevant factor
+  - But with large amounts of data, p-values can be significant/small even when the factor is not related to the response 
+  
+- Confidence Interval (CI): where the coefficient probably lies, and how close to zero 
+
+- T-Statistic: coeff / standard error, related to p-value
+
+- Coefficient: not much difference even if very low p-value, then it isn't very meaningful
+
+- R-squared: estimate how much variations the model accounts for 
+  - e.g. R-squared = 80% , the model accounts for 80% of variability in the data & the rest are randomness or other factors 
+
 
 
 
