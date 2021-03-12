@@ -261,8 +261,10 @@ It is much more likely that the first model is better.
 
 
 
-L* = maximum likelihood vlaue
+L* = maximum likelihood value
+
 k  = number of parameters being estimated
+
 n  = number of data points 
 
 
