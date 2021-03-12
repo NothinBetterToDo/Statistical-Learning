@@ -65,12 +65,26 @@ There are 2 benefits on concentrating on the first n principal components:
 
 Principal components are orthogonal with each other. The steps are outlined below:
 
-![scale](https://latex.codecogs.com/gif.latex?scale%20%5Cfrac%7B1%7D%7Bm%7D%20%5Csum_i%20x_%7Bij%7D%20%3D%20u_%7Bj%7D%20%3D%200)
+  ![scale](https://latex.codecogs.com/gif.latex?scale%20%5Cfrac%7B1%7D%7Bm%7D%20%5Csum_i%20x_%7Bij%7D%20%3D%20u_%7Bj%7D%20%3D%200)
 
 - find all the eigenvectors ![xtx](https://latex.codecogs.com/gif.latex?X%5E%7BT%7DX)
 - V: matrix of eigenvectors (sorted by eigenvalue)
 - V = [V1, V2...], where ![j](https://latex.codecogs.com/gif.latex?V_%7Bj%7D%20%3D%20jth%5Crightarrow%20X%5E%7BT%7DX)
+
+
 - PCA Linear transformation, where 1st component is XV1, 2nd = XV2
+
+- kth new factor vlaue for ith data point: ![kth](https://latex.codecogs.com/gif.latex?t_%7Bik%7D%20%3D%20%5Csum_%7Bm%7D%5E%7Bj%3D1%7D%20x_%7Bij%7D%20v_%7Bjk%7D)
+
+
+
+
+Doing so, PCA eliminates correlation between factors. If want to have fewer variables, only include the first n principal components. We can also deal with non-linear functions using kernels (similar to SVM modeling). 
+
+
+
+
+
 
 
 
@@ -95,7 +109,10 @@ Show that x = ![x](https://latex.codecogs.com/gif.latex?%5Cbar%7Bx%7D) is an eig
 
 This means if lambda is an eigenvalue of A, and x is an eigenvector belonging to lambda, any non-zero multiple of x will be an eigenvector. 
 
+
 ![Assuming](https://latex.codecogs.com/gif.latex?Assuming%3A%20A%5Cbar%7Bx%7D%20%3D%20%5Clambda%20%5Cbar%7Bx%7D)
+
+
 
 
 ![Proof](https://latex.codecogs.com/gif.latex?A%28%5Calpha%20%5Cbar%7Bx%7D%29%20%3D%20%5Calpha%20A%5Cbar%7Bx%7D%20%3D%20%5Calpha%20%5Clambda%20%5Cbar%7Bx%7D%20%3D%20%5Clambda%20%28%5Calpha%20%5Cbar%7Bx%7D%29)
