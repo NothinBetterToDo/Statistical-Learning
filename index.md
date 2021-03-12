@@ -32,8 +32,9 @@ For lambda = -1, the formula:
 
 
 
-
 We can use Q-Q plot to check if we need any transformation. 
+
+
 
 
 
@@ -69,7 +70,12 @@ Question: A = n x n matrix. A scalar ![lambda](https://latex.codecogs.com/gif.la
 Show that x = ![x](https://latex.codecogs.com/gif.latex?%5Cbegin%7Bbmatrix%7D%202%5C%5C1%5C%5C%20%5Cend%7Bbmatrix%7D) is an eigenvector of A = ![A](https://latex.codecogs.com/gif.latex?%5Cbigl%28%5Cbegin%7Bsmallmatrix%7D%203%20%26%202%5C%5C%203%20%26%20-2%5C%5C%20%5Cend%7Bsmallmatrix%7D%5Cbigr%29) corresponding to ![lambda](https://latex.codecogs.com/gif.latex?%5Clambda) = 4. 
 
 
+![Eq1](https://latex.codecogs.com/gif.latex?Ax%20%3D%20%5Clambda%20x)
+![Eq2](https://latex.codecogs.com/gif.latex?%5Cbegin%7Bpmatrix%7D%203%20%26%202%5C%5C%203%20%26%20-2%5C%5C%20%5Cend%7Bpmatrix%7D%20%5Cbegin%7Bpmatrix%7D%202%5C%5C%201%5C%5C%20%5Cend%7Bpmatrix%7D%20%3D%204%5Cbegin%7Bpmatrix%7D%202%5C%5C%201%5C%5C%20%5Cend%7Bpmatrix%7D)
+![Eq3](https://latex.codecogs.com/gif.latex?%5Cbegin%7Bbmatrix%7D%203.2%20&plus;%202.1%5C%5C%203.2%20&plus;%28-2%29.1%20%5C%5C%20%5Cend%7Bbmatrix%7D%20%3D%20%5Cbegin%7Bbmatrix%7D%208%5C%5C%204%5C%5C%20%5Cend%7Bbmatrix%7D)
+![Eq4](https://latex.codecogs.com/gif.latex?%5Cbegin%7Bpmatrix%7D%208%5C%5C%204%5C%5C%20%5Cend%7Bpmatrix%7D%20%3D%20%5Cbegin%7Bpmatrix%7D%208%5C%5C%204%5C%5C%20%5Cend%7Bpmatrix%7D)
 
+This means if lambda is an eigenvalue of A, and x is an eigenvector belonging to lambda, any non-zero multiple of x will be an eigenvector. 
 
 
 
