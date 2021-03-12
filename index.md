@@ -237,7 +237,10 @@ Example:
 - Model 1: AIC = 80
 - Model 2: AIC = 85
 
+
+
 ![AIC Example 1](https://latex.codecogs.com/gif.latex?e%5E%5Cfrac%7B%28AIC_%7B1%7D%20-%20AIC_%7B2%7D%29%7D%7B2%7D)
+
 
 
 
