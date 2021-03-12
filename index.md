@@ -301,6 +301,25 @@ The difference between AIC and BIC:
   - e.g. R-squared = 80% , the model accounts for 80% of variability in the data & the rest are randomness or other factors 
 
 
+**Advanced Regression**
+
+We can use trees to divide data set, and speficy different modesl for each subset of the data. 
+
+1. Classification Problems
+   - CART (Classification and Regression Trees)
+2. Decision Making
+   - Decision Tree
+   
+   
+
+
+
+
+**References**
+
+1. The R Book, by Michael J.Crawley, Published by Wiley, 2007.
+2. Introduction to Analytics Modeling, by Prof.Joel Sokol.
+
 
 
 
