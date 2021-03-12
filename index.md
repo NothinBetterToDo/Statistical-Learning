@@ -272,13 +272,12 @@ n  = number of data points
 Similar to AIC:
 - penalty term for BIC > AIC, so encourages models with fewer parameters than AIC does
 - Only use BIC when data points > parameters 
-```
+
 When comparing 2 models on the same dataset by their BIC
 - difference > 10, smaller BIC is **very likely** better
 - 6 < difference < 10, then smaller BIC is **likely** better
 - 2 < difference < 6, then smaller BIC is **somewhat likely** better
 - 0 < difference < 2, then smaller BIC is **slightly likely** better 
-```
 
 The difference between AIC and BIC:
 - AIC: frequentist point of view
