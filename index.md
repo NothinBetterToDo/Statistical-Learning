@@ -168,6 +168,7 @@ Sum of squared errors:
 How can we measure model quality?
 
 **Likelihood**
+
 The most basic is likelihood. We can measure the probability (density) for any parameter set, and whichever set of parameters gives the highest probability density is called the maximum likelihood (best fit set of parameters). 
 
 Assume:
@@ -191,7 +192,31 @@ We can use likelihood to compare 2 different models by using the likelihood rati
 
 
 **AIC** 
-Aikaike's information criterion (AIC) is known as a penalized log-likelihood.  
+
+Aikaike's information criterion (AIC) is known as a penalized log-likelihood. Adding extra parameters can lead to overfitting to fit random effects. Smallest AIC is preferred - encourages fewer parameters k, and higher likelihood.
+
+- L*: maximum likelihood value
+- k: number of parameters being estimated
+
+
+
+![AIC](https://latex.codecogs.com/gif.latex?AIC%20%3D%202k%20-%202%20ln%20%28L%5E%7B*%7D%29)
+
+
+
+
+![AIC Substitute](https://latex.codecogs.com/gif.latex?AIC%20%3D%202%28m&plus;1%29%20-%202%20ln%5Cleft%20%28%20%5Cfrac%7B1%7D%7B%5Csigma%20%5Csqrt%7B2%5Cpi%20%7D%5E%7Bn%7D%7D%20e%5E%7B-%5Cfrac%7B1%7D%7B2%5Csigma%20%5E%7B2%7D%7D%7D%20%5Csum_%7Bn%7D%5E%7Bi%3D1%7D%20%28z%7B_%7Bi%7D%7D%20-%20%28a%5E%7B_%7B0%7D%7D%20&plus;%20%5Csum_%7Bm%7D%5E%7Bj%3D1%7D%20a_%7Bj%7D%20x_%7Bij%7D%29%29%5E%7B2%7D%20%5Cright%20%29)
+
+
+
+
+
+**Corrected AIC***
+
+AIC has nice properties if there are infinitely manay data points to fit the model. There's a correction term we can add to AIC to deal with data where data set is not infinite.
+
+
+![Corrected AIC]()
 
 
 
