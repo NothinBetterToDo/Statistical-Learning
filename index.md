@@ -141,7 +141,9 @@ This means if lambda is an eigenvalue of A, and x is an eigenvector belonging to
 
 ## [Regression](#Regression)
 
-It can be used to determine how do systems work, and what will happen in the future. 
+It can be used to determine how do systems work (descriptive), and what will happen in the future (predictive). 
+
+But we need to take note that correlation does not mean causation. So just because there's a correlation and our regression model can make good predictions, it does not mean the predictors caused the response. 
 
 We can determine whether the fitted line is good or not, by looking at the sum of squared errors. The coefficients for x  change as we move the line, and the best-fit regression line is the one that minimizes sum of squared errors. The sum of squared errors (SSE) is a convex quadratic function and we need to minimize it, by taking partial derivatives of the sum of squared errors term with respect to each constant & set to zero and solve these equations simultaneously to find the minimum SSE.
 
@@ -191,7 +193,7 @@ We can use likelihood to compare 2 different models by using the likelihood rati
 
 
 
-**AIC** 
+**Akaike Information Criterion(AIC)** 
 
 Aikaike's information criterion (AIC) is known as a penalized log-likelihood. Adding extra parameters can lead to overfitting to fit random effects. Smallest AIC is preferred - encourages fewer parameters k, and higher likelihood.
 
@@ -216,10 +218,57 @@ Aikaike's information criterion (AIC) is known as a penalized log-likelihood. Ad
 AIC has nice properties if there are infinitely manay data points to fit the model. There's a correction term we can add to AIC to deal with data where data set is not infinite.
 
 
-![Corrected AIC]()
+![Corrected AIC](https://latex.codecogs.com/gif.latex?AIC_%7Bc%7D%20%3D%20AIC%20&plus;%20%5Cfrac%7B2k%28k&plus;1%29%7D%7Bn-k%3D1%7D%20%3D%202k%20-%202%20ln%28L%5E%7B*%7D%29%29%20&plus;%20%5Cfrac%7B2k%28k&plus;1%29%29%7D%7Bn-k-1%7D)
 
 
 
+
+We can calculate the relative probability that one of the models is better than the other. 
+
+Example: 
+
+- Model 1: AIC = 80
+- Model 2: AIC = 85
+
+
+![AIC Example1](https://latex.codecogs.com/gif.latex?e%5E%5Cfrac%7B%28AIC_%7B1%7D%20-%20AIC_%7B2%7D%29%7D%7B2%7D)
+
+
+
+![AIC Example 2](https://latex.codecogs.com/gif.latex?e%5E%7B%5Cfrac%7B80-85%7D%7B2%7D%7D%20%5Capprox%208.2%25)
+
+
+
+
+It is much more likely that the first model is better. 
+
+
+
+**Bayesian Information Criterion(BIC)**
+
+![BIC Formula](https://latex.codecogs.com/gif.latex?BIC%20%3D%20k%20ln%28n%29%20-%202%20ln%20%28L%5E%7B*%7D%29)
+
+
+
+
+L* = maximum likelihood vlaue
+k  = number of parameters being estimated
+n  = number of data points 
+
+
+Similar to AIC:
+- penalty term for BIC > AIC, so encourages models with fewer parameters than AIC does
+- Only use BIC when data points > parameters 
+
+When comparing 2 models on the same dataset by their BIC
+- difference |BIC1 - BIC2| > 10, smaller BIC is **very likely** better
+- 6 < difference < 10, then smaller BIC is **likely** better
+- 2 < difference < 6, then smaller BIC is **somewhat likely** better
+- 0 < difference < 2, then smaller BIC is **slightly likely** better 
+
+The difference between AIC and BIC:
+- AIC: frequentist point of view
+- BIC: Bayesian point of view
 
 
 
@@ -229,13 +278,6 @@ AIC has nice properties if there are infinitely manay data points to fit the mod
 1. The R Book, by Michael J.Crawley, Published by Wiley, 2007.
 2. Statistics for Machine Learning, by Pratap Dangeti, Published by Packt Publishing, 2017.
 3. Introduction to Analytics Modeling by Prof.Joel Sokol.
-
-
-
-
-
-
-
 
 
 ## Welcome to GitHub Pages
