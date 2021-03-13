@@ -13,7 +13,20 @@ It can be detected using:
 
 ## [Change Detection](#Change-Detection)
 
+xt = observed value at time t
+mu = mean of x, if no change
 
+If running total > 0, add to the previous metric 
+
+Else, set to 0 because it is irrelevant to detect changes 
+
+Include constant C to pull the running total down a bit. The bigger C, harder for St to get large & less sensitive
+
+![cusum](https://latex.codecogs.com/gif.latex?S_%7Bt%7D%20%3D%20max%20%5Cleft%20%5C%7B%200%2C%20S_%7Bt-1%7D%20&plus;%20%5Cleft%20%28%20x_%7Bt%7D%20-%20%5Cmu%20-%20C%20%5Cright%20%29%20%5Cright%20%5C%7D)
+
+
+
+Is St more or equal to T, threshold? 
 
 ## [Box-Cox Transformation](#Box-Cox-Transformation)
 
