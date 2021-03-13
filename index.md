@@ -365,6 +365,7 @@ Receiver Operating Characteristic (ROC) Curve to specifiy a threshold probabilit
 | Yes (True)| Correct | Incorrect |
 | No (True) | Incorrect| Correct |
 
+<br />
 
 Meaning:
 
@@ -373,6 +374,7 @@ Meaning:
 | Yes (True)| True Positive | False Negative |
 | No (True) | False Positive | True Negative |
 
+<br />
 
 Example of an email spam filter using SVM:
 
@@ -380,6 +382,8 @@ Example of an email spam filter using SVM:
 | --------------- | --------------- | --------------- |
 | Yes (True)| 490 (TP) | 10 (FN) |
 | No (True) | 100 (FP) | 400 (TN) |
+
+<br />
 
 Question: 
 - fraction of email expect to be spam = FP / (TP+FP) 
@@ -518,6 +522,8 @@ It is important in investment e.g. traditional portfolio optimization model, whe
 <br />
 
 
+
+<br />
 **References**
 
 1. The R Book, by Michael J.Crawley, Published by Wiley, 2007.
