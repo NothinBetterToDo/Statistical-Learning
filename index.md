@@ -381,7 +381,35 @@ Question:
 - fraction of email expect to be spam = FP / (TP+FP) 
 - fraction of real email lost = FN / (TP+FN)
 
+We can also calculate cost of lost productivity: 
+- assume: $0 for correct, $0.04 to read spam, $1 to miss a real email
+- if 50% of email is spam, total cost = 490 x $0 + 400 x $0 + 10 x $1 + 100 x $0.04 = $14, or $1.4 per email
+- if 40% of email is spam, total cost = 490 x (60%/50%) x $0 + 400 x (40%/50%) x $0 + 10 x (60%/50%) x $1 + 100 x (40%/50%) x $0.04 = $15.2, or $1.52 per email
 
+**Regression**
+
+1. Poisson Regression: 
+    - use when response follows a Poisson distribution ![Poisson Dist](https://latex.codecogs.com/gif.latex?f%28z%29%20%3D%20%5Cfrac%7B%5Clambda%20%5E%7Bz%7D%20e%5E%7B-%5Clambda%20%7D%7D%7Bz%21%7D)
+
+
+    - example: to count arrivals at an airport security line
+    - estimate lambda (x) 
+
+
+2. Regression splines:
+    - function of polynomials that connect to each other
+    - allow fit to different functions to different parts of the data set, which smooth connections between the parts 
+    - order k regression spline: the polynomials are all order k   
+
+3. Bayesian regression:
+   - also start with some estimate of how regression coefficients & random error is distributed
+   - then use Bayes' theorem to update estimate
+   - most helpful when not much data
+
+4. K-Nearest-Neighbor (KNN) regression:
+   - no trying to guess function of the attributes which might be a good predictor
+   - plot all the data, and predict a response by taking average response of k closest data points 
+   
 
 **References**
 
