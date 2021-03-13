@@ -327,6 +327,7 @@ Trees Branching
 - if it's a classication tree, use the most common predicted response
 
 Pros: better overall estimates, averages between trees somehow neutralizes overfitting
+
 Cons: harder to explain/interpret, can't given specific model from the data
 
 
@@ -365,10 +366,13 @@ Receiver Operating Characteristic (ROC) Curve to specifiy a threshold probabilit
 | No (True) | Incorrect| Correct |
 
 
+Meaning:
+
 | Classification | Yes (Model) | No (Model) |
 | --------------- | --------------- | --------------- |
 | Yes (True)| True Positive | False Negative |
 | No (True) | False Positive | True Negative |
+
 
 Example of an email spam filter using SVM:
 
@@ -385,6 +389,7 @@ We can also calculate cost of lost productivity:
 - assume: $0 for correct, $0.04 to read spam, $1 to miss a real email
 - if 50% of email is spam, total cost = 490 x $0 + 400 x $0 + 10 x $1 + 100 x $0.04 = $14, or $1.4 per email
 - if 40% of email is spam, total cost = 490 x (60%/50%) x $0 + 400 x (40%/50%) x $0 + 10 x (60%/50%) x $1 + 100 x (40%/50%) x $0.04 = $15.2, or $1.52 per email
+
 
 **Regression**
 
@@ -412,6 +417,70 @@ We can also calculate cost of lost productivity:
    - no trying to guess function of the attributes which might be a good predictor
    - plot all the data, and predict a response by taking average response of k closest data points 
    
+## [Exponential Smoothing](#Exponential-Smoothing)
+
+Time series data can be affected by:
+- trends over time e.g. stock prices
+- cyclical variations e.g. annual temperature cycles, weekly sales
+- randomness e.g. stock prices, blood pressure
+
+St = expected baseline response at time period t, xt = observed response at t 
+- alpha -> 0: a lot of randomness (e.g. yesterday's baseliness is a good indicator for today, willing to trust previous estimate, St-1)
+- alpha -> 1: not much randomness (e.g. today's baseliness is close to the observed data, willing to trust xt)
+
+![Exp Smooth Eq1](https://latex.codecogs.com/gif.latex?S_%7Bt%7D%20%3D%20%5Calpha%20x_%7Bt%7D%20&plus;%20%281-%5Calpha%20%29%28S_%7Bt-1%7D%29)
+
+
+
+
+Include trends at time prediod t (starting conditions T1= 0, shows no initial trend): 
+
+![trend1](https://latex.codecogs.com/gif.latex?S_%7Bt%7D%20%3D%20%5Calpha%20x_%7Bt%7D%20&plus;%20%281-%5Calpha%20%29%28S_%7Bt-1%7D%20&plus;%20T_%7Bt-1%7D%29)
+
+
+
+![trend2](https://latex.codecogs.com/gif.latex?T_%7Bt%7D%20%3D%20%5Cbeta%20%28S_%7Bt%7D%20-%20S_%7Bt-1%7D%29%20&plus;%20%281-%5Cbeta%20%29T_%7Bt-1%7D)
+
+
+
+
+Include cyclic patterns:
+
+It can be like trend, additive component OR
+
+Seasonalities in a multiplicative way (starting condition, 1 = no initial cyclic effect)
+- L: lengh of a cycle
+- Ct: multiplicative seasonality factor for time t, inflate/deflate the observation (we use cyclic factor from L time periods ago, because that is the most recent cyclic factor from the same part of the cycle)
+
+![cyclic1](https://latex.codecogs.com/gif.latex?S_%7Bt%7D%20%3D%20%5Cfrac%7B%20%5Calpha%20x_%7Bt%7D%7D%7BC_%7Bt-L%7D%20&plus;%20%281-%5Calpha%29%28S_%7Bt-1%7D%20&plus;%20T_%7Bt-1%7D%29%7D)
+ 
+ 
+
+If C = 1.1 on weekend, just means sales were 10% higher because of weekend
+
+![cyclic2](https://latex.codecogs.com/gif.latex?C_%7Bt%7D%20%3D%20%5Cgamma%20%28x_%7Bt%7D%20/%20S_%7Bt%7D%29%20&plus;%20%281-%5Cgamma%20%29C_%7Bt-L%7D)
+
+
+
+
+This time series model is also known as single / double / triple exponential smoothing (depending on how many trends and seasonality include). Triple exponential smoothing is also called Winter's Method or Holt-Winters.
+Exponential smoothing smoothes out randomness (peaks/valleys), and can also be used for forecasting. It is primarily used on the most recent data points, so it is better for short-term forecasting. 
+
+Our guess for next time period is the same as latest baseline estimate
+
+![forecast1](https://latex.codecogs.com/gif.latex?S_%7Bt&plus;1%7D%20%3D%20%5Calpha%20x_%7Bt&plus;1%7D%20&plus;%20%281-%5Calpha%20%29S_%7Bt%7D%20%2C%20x_%7Bt&plus;1%7D%20%5Crightarrow%20unknown%20%5Crightarrow%20S_%7Bt%7D)
+
+
+
+When trends included, best estimate of trend = most current trend estimate
+
+When multiplicative seasonality is included, 
+![forecast2](https://latex.codecogs.com/gif.latex?F_%7Bt&plus;1%7D%20&plus;%20%28S_%7Bt%7D%20&plus;%20T_%7Bt%7D%29%20C_%7B%28t&plus;1%29-L%7D)
+
+
+
+
+
 
 **References**
 
