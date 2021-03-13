@@ -24,10 +24,12 @@ If running total > 0, add to the previous metric. Else, set to 0 because it is i
 Include constant C to pull the running total down a bit. The bigger C, harder for St to get large & get less sensitive.
 
 **Detecting an increase**
+
 ![cusum increase](https://latex.codecogs.com/gif.latex?S_%7Bt%7D%20%3D%20max%20%5Cleft%20%5C%7B%200%2C%20S_%7Bt-1%7D%20&plus;%20%5Cleft%20%28%20x_%7Bt%7D%20-%20%5Cmu%20-%20C%20%5Cright%20%29%20%5Cright%20%5C%7D)
 
 
 **Detecting a decrease**
+
 ![cusum decrease](https://latex.codecogs.com/gif.latex?S_%7Bt%7D%20%3D%20max%20%5Cleft%20%5C%7B%200%2C%20S_%7Bt-1%7D%20&plus;%20%5Cleft%20%28%20%5Cmu%20-%20x_%7Bt%7D%20-%20C%20%5Cright%20%29%20%5Cright%20%5C%7D)
 
 
