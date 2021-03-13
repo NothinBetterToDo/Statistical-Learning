@@ -433,13 +433,16 @@ St = expected baseline response at time period t, xt = observed response at t
 
 
 
-Include trends at time prediod t (starting conditions T1= 0, shows no initial trend): 
+Include trends at time period t (starting conditions T1= 0, shows no initial trend): 
 
 ![trend1](https://latex.codecogs.com/gif.latex?S_%7Bt%7D%20%3D%20%5Calpha%20x_%7Bt%7D%20&plus;%20%281-%5Calpha%20%29%28S_%7Bt-1%7D%20&plus;%20T_%7Bt-1%7D%29)
 
 
 
+
 ![trend2](https://latex.codecogs.com/gif.latex?T_%7Bt%7D%20%3D%20%5Cbeta%20%28S_%7Bt%7D%20-%20S_%7Bt-1%7D%29%20&plus;%20%281-%5Cbeta%20%29T_%7Bt-1%7D)
+
+
 
 
 
@@ -458,7 +461,9 @@ Seasonalities in a multiplicative way (starting condition, 1 = no initial cyclic
 
 If C = 1.1 on weekend, just means sales were 10% higher because of weekend
 
+
 ![cyclic2](https://latex.codecogs.com/gif.latex?C_%7Bt%7D%20%3D%20%5Cgamma%20%28x_%7Bt%7D%20/%20S_%7Bt%7D%29%20&plus;%20%281-%5Cgamma%20%29C_%7Bt-L%7D)
+
 
 
 
@@ -479,6 +484,8 @@ When multiplicative seasonality is included,
 
 
 
+
+To optimize alpha, beta, gamma: use optimization = min(Ft - xt)^2
 
 
 
