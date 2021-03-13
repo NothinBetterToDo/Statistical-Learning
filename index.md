@@ -355,6 +355,7 @@ Receiver Operating Characteristic (ROC) Curve to specifiy a threshold probabilit
 
 - x-axis: 1 - Specificity = 1 - TN/(TN + FP) 
 - y-axis: Sensitivity = TP/(TP + FN) 
+- Sensitivity is also known as True Positive Rate, and Specificity = True Negative Rate
 
 **Confusion Matrix**
 
@@ -376,6 +377,9 @@ Example of an email spam filter using SVM:
 | Yes (True)| 490 (TP) | 10 (FN) |
 | No (True) | 100 (FP) | 400 (TN) |
 
+Question: 
+- fraction of email expect to be spam = FP / (TP+FP) 
+- fraction of real email lost = FN / (TP+FN)
 
 
 
