@@ -364,6 +364,21 @@ Receiver Operating Characteristic (ROC) Curve to specifiy a threshold probabilit
 | No (True) | Incorrect| Correct |
 
 
+| Classification | Yes (Model) | No (Model) |
+| --------------- | --------------- | --------------- |
+| Yes (True)| True Positive | False Negative |
+| No (True) | False Positive | True Negative |
+
+Example of an email spam filter using SVM:
+
+| Classification | Yes (Model) | No (Model) |
+| --------------- | --------------- | --------------- |
+| Yes (True)| 490 (TP) | 10 (FN) |
+| No (True) | 100 (FP) | 400 (TN) |
+
+
+
+
 **References**
 
 1. The R Book, by Michael J.Crawley, Published by Wiley, 2007.
