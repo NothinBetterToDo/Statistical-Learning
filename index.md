@@ -392,6 +392,8 @@ We can also calculate cost of lost productivity:
     - use when response follows a Poisson distribution ![Poisson Dist](https://latex.codecogs.com/gif.latex?f%28z%29%20%3D%20%5Cfrac%7B%5Clambda%20%5E%7Bz%7D%20e%5E%7B-%5Clambda%20%7D%7D%7Bz%21%7D)
 
 
+
+
     - example: to count arrivals at an airport security line
     - estimate lambda (x) 
 
