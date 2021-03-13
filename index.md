@@ -487,6 +487,35 @@ When multiplicative seasonality is included,
 
 To optimize alpha, beta, gamma: use optimization = min(Ft - xt)^2
 
+## [ARIMA](#ARIMA)
+
+AutoRegressive Integrated Moving Average has 3 key parts:
+1. Differences (d)
+    - exponential smoothing estimates that St based on xt, xt-1 and it works well if data is stationary 
+    - often data is NOT stationary, but the difference might be stationary 
+2. Autoregression (p)
+    - predicting current value based on previous time periods' values 
+3. Moving Average (q)
+    - use previous errors as predictors 
+
+Specific values of p, d, q:
+- ARIMA (0,0,0) = white noise
+- ARIMA (0,1,0) = random walk
+- ARIMA (p,0,0) = autoregressive model
+- ARIMA (0,0,q) = moving average model
+- ARIMA (0,1,1) = basic exponential smoothing model 
+
+ARIMA works better than exponential smoothing when data is more stable with fewer peaks, valleys and outliers. We also need at least 40 data points for ARIMA to work well. 
+
+**GARCH**
+
+Generalized Autoregressive Conditional Heteroscedasticity (GARCH) is used to estimate or forecast the variance. We need to do variance estimation because it can tell us how much the forecast might be different than the true value. It is important in investment e.g. traditional portfolio optimization model, where it balances the expected return of investments based on amount of volatility. 
+
+| GARCH | ARIMA | 
+| --------------- | --------------- | 
+| Variances, squared errors | Observations, linear errors | 
+| Raw variances | Differences in variances |
+
 
 
 **References**
