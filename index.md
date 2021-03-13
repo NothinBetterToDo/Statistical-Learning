@@ -349,10 +349,18 @@ This model is useful when response is a probability (number between 0 and 1) and
 
 ![logit 4](https://latex.codecogs.com/gif.latex?a_%7B0%7D%20&plus;%20a_%7B1%7D%20x_%7B1%7D%20&plus;%20a_%7B2%7Dx_%7B2%7D%20&plus;%20...%20&plus;%20a_%7Bj%7Dx_%7Bj%7D%20%3D%20&plus;%5Cinfty%20%2C%20p%20%3D1)
 
-Logit model 
+Pseudo R-squared is not really measuring fraction of variance. 
 
+Receiver Operating Characteristic (ROC) Curve to specifiy a threshold probability. It is quicky way to determine quality of the model but does not provide cost of false negatives and false positives. 
 
+- x-axis: 1 - Specificity = 1 - TN/(TN + FP) 
+- y-axis: Sensitivity = TP/(TP + FN) 
 
+**Confusion Matrix**
+
+|   |Yes|No |
+|Yes|Correct|Incorrect |
+|No |Incorrect|Correct |
 
 **References**
 
