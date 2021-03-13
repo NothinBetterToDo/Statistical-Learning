@@ -439,10 +439,7 @@ Include trends at time period t (starting conditions T1= 0, shows no initial tre
 
 
 
-
 ![trend2](https://latex.codecogs.com/gif.latex?T_%7Bt%7D%20%3D%20%5Cbeta%20%28S_%7Bt%7D%20-%20S_%7Bt-1%7D%29%20&plus;%20%281-%5Cbeta%20%29T_%7Bt-1%7D)
-
-
 
 
 
@@ -509,13 +506,16 @@ ARIMA works better than exponential smoothing when data is more stable with fewe
 
 ## [GARCH](#GARCH)
 
-Generalized Autoregressive Conditional Heteroscedasticity (GARCH) is used to estimate or forecast the variance. We need to do variance estimation because it can tell us how much the forecast might be different than the true value. It is important in investment e.g. traditional portfolio optimization model, where it balances the expected return of investments based on amount of volatility. 
+Generalized Autoregressive Conditional Heteroscedasticity (GARCH) is used to estimate or forecast the variance. We need to do variance estimation because it can tell us how much the forecast might be different than the true value. 
+
+It is important in investment e.g. traditional portfolio optimization model, where it balances the expected return of investments based on amount of volatility. 
 
 | GARCH | ARIMA | 
 | --------------- | --------------- | 
 | Variances, squared errors | Observations, linear errors | 
 | Raw variances | Differences in variances |
 
+<br />
 
 
 **References**
