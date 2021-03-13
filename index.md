@@ -303,7 +303,7 @@ The difference between AIC and BIC:
 
 ## [Advanced Regression](#Advanced-Regression)
 
-We can use trees to divide data set, and speficy different modesl for each subset of the data. 
+We can use trees to divide data set, and specify different models for each subset of the data. 
 
 1. Classification Problems
    - CART (Classification and Regression Trees)
