@@ -301,7 +301,7 @@ The difference between AIC and BIC:
   - e.g. R-squared = 80% , the model accounts for 80% of variability in the data & the rest are randomness or other factors 
 
 
-**Advanced Regression**
+## [Advanced Regression](#Advanced Regression)
 
 We can use trees to divide data set, and speficy different modesl for each subset of the data. 
 
@@ -309,8 +309,49 @@ We can use trees to divide data set, and speficy different modesl for each subse
    - CART (Classification and Regression Trees)
 2. Decision Making
    - Decision Tree
-   
-   
+
+Trees Branching
+
+- Common practice is to branch one factor at a time
+- Use half of the data, and build a regression model 
+   - calculate variance of the response for all data points in the leaf
+   - test spliting to determine total variance of the 2 branches & choose the lowest 
+   - if enough data points make the split
+   - can go backwars & prune the tree using the other half of data
+- Common rule is to stop branching if a leaf would contain < than 5% of the data points, or low improvement benefit 
+
+
+**Random Forests**
+
+- if it's a regression tree, use the average predicted response
+- if it's a classication tree, use the most common predicted response
+
+Pros: better overall estimates, averages between trees somehow neutralizes overfitting
+Cons: harder to explain/interpret, can't given specific model from the data
+
+
+**Logistic Regression**
+
+This model is useful when response is a probability (number between 0 and 1) and binary (either 0,1). 
+
+![logit 1](https://latex.codecogs.com/gif.latex?log%20%5Cfrac%7Bp%7D%7B1-p%7D%20%3D%20a_%7B0%7D%20&plus;%20a_%7B1%7D%20x_%7B1%7D%20&plus;%20a_%7B2%7Dx_%7B2%7D%20&plus;%20...%20&plus;%20a_%7Bj%7Dx_%7Bj%7D)
+
+
+
+![logit 2](https://latex.codecogs.com/gif.latex?p%20%3D%20%5Cfrac%7B1%7D%7B1&plus;e%5E%7B-%28a_%7B0%7D%20&plus;%20a_%7B1%7D%20x_%7B1%7D%20&plus;%20a_%7B2%7Dx_%7B2%7D%20&plus;%20...%20&plus;%20a_%7Bj%7Dx_%7Bj%7D%20%29%7D%7D)
+
+
+
+![logit 3](https://latex.codecogs.com/gif.latex?a_%7B0%7D%20&plus;%20a_%7B1%7D%20x_%7B1%7D%20&plus;%20a_%7B2%7Dx_%7B2%7D%20&plus;%20...%20&plus;%20a_%7Bj%7Dx_%7Bj%7D%20%3D%20-%5Cinfty%20%2C%20p%20%3D%200)
+
+
+
+
+![logit 4]( https://latex.codecogs.com/gif.latex?a_%7B0%7D%20&plus;%20a_%7B1%7D%20x_%7B1%7D%20&plus;%20a_%7B2%7Dx_%7B2%7D%20&plus;%20...%20&plus;%20a_%7Bj%7Dx_%7Bj%7D%20%3D%20-%5Cinfty%20%2C%20p%20%3D%200)
+
+
+
+![logit 5](https://latex.codecogs.com/gif.latex?a_%7B0%7D%20&plus;%20a_%7B1%7D%20x_%7B1%7D%20&plus;%20a_%7B2%7Dx_%7B2%7D%20&plus;%20...%20&plus;%20a_%7Bj%7Dx_%7Bj%7D%20%3D%20&plus;%5Cinfty%20%2C%20p%20%3D1)
 
 
 
