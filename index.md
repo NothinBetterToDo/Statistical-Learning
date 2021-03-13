@@ -1,3 +1,20 @@
+## [Outliers](#Outliers)
+
+There are few different types of outliers:
+
+1. Point Outliers - values are far from the rest of the data.
+2. Contextual Outliers - relies on the context provided by other points. For instance, when a value is not too far from the rest overall, but far from points nearby in time.
+3. Collective Outliers - when data points collectively look like outlier
+
+It can be detected using:
+
+1. Automated methods e.g. box-and-whisker
+2. Modeling error e.g. fit exponential smoothing model, and points with very large error might be outlier
+
+## [Change Detection](#Change-Detection)
+
+
+
 ## [Box-Cox Transformation](#Box-Cox-Transformation)
 
 Some machine learning models assume data is normally distributed. Therefore, results will be biased when this assumption is not met. The unequal variance in a data is called heteroscedasticity. Higher variance in certain data points will make those estimation erros larger and push a model to fit those points. 
@@ -171,10 +188,10 @@ Sum of squared errors:
 
 ![sse2](https://latex.codecogs.com/gif.latex?%3D%20%5Csum%20%5Cleft%20%28%20y_%7Bi%7D%20-%20%28a_%7B0%7D%20&plus;%20a_%7B1%7Dx_%7Bi%7D%29%20%5Cright%20%29%5E%7B2%7D)
 
-
+<br />
 
 How can we measure model quality?
-
+<br />
 **Likelihood**
 
 The most basic is likelihood. We can measure the probability (density) for any parameter set, and whichever set of parameters gives the highest probability density is called the maximum likelihood (best fit set of parameters). 
@@ -196,8 +213,7 @@ where xij = observed predictor value, a0 - am = parameters to fit.
 
 We can use likelihood to compare 2 different models by using the likelihood ratio and conduct a hypothesis test. 
 
-
-
+<br />
 
 **Akaike Information Criterion(AIC)** 
 
@@ -217,7 +233,7 @@ Aikaike's information criterion (AIC) is known as a penalized log-likelihood. Ad
 
 
 
-
+<br />
 
 **Corrected AIC***
 
@@ -251,7 +267,7 @@ Example:
 
 It is much more likely that the first model is better. 
 
-
+<br />
 
 **Bayesian Information Criterion(BIC)**
 
@@ -282,6 +298,7 @@ The difference between AIC and BIC:
 - AIC: frequentist point of view
 - BIC: Bayesian point of view
 
+<br />
 
 **Regression Output**
 
@@ -394,6 +411,7 @@ We can also calculate cost of lost productivity:
 - if 50% of email is spam, total cost = 490 x $0 + 400 x $0 + 10 x $1 + 100 x $0.04 = $14, or $1.4 per email
 - if 40% of email is spam, total cost = 490 x (60%/50%) x $0 + 400 x (40%/50%) x $0 + 10 x (60%/50%) x $1 + 100 x (40%/50%) x $0.04 = $15.2, or $1.52 per email
 
+<br />
 
 **Regression**
 
@@ -428,7 +446,10 @@ Time series data can be affected by:
 - cyclical variations e.g. annual temperature cycles, weekly sales
 - randomness e.g. stock prices, blood pressure
 
-St = expected baseline response at time period t, xt = observed response at t 
+St = expected baseline response at time period t 
+
+xt = observed response at t 
+
 - alpha -> 0: a lot of randomness (e.g. yesterday's baseliness is a good indicator for today, willing to trust previous estimate, St-1)
 - alpha -> 1: not much randomness (e.g. today's baseliness is close to the observed data, willing to trust xt)
 
@@ -453,7 +474,7 @@ Include cyclic patterns:
 It can be like trend, additive component OR
 
 Seasonalities in a multiplicative way (starting condition, 1 = no initial cyclic effect)
-- L: lengh of a cycle
+- L: length of a cycle
 - Ct: multiplicative seasonality factor for time t, inflate/deflate the observation (we use cyclic factor from L time periods ago, because that is the most recent cyclic factor from the same part of the cycle)
 
 ![cyclic1](https://latex.codecogs.com/gif.latex?S_%7Bt%7D%20%3D%20%5Cfrac%7B%20%5Calpha%20x_%7Bt%7D%7D%7BC_%7Bt-L%7D%20&plus;%20%281-%5Calpha%29%28S_%7Bt-1%7D%20&plus;%20T_%7Bt-1%7D%29%7D)
@@ -469,7 +490,10 @@ If C = 1.1 on weekend, just means sales were 10% higher because of weekend
 
 
 
-This time series model is also known as single / double / triple exponential smoothing (depending on how many trends and seasonality include). Triple exponential smoothing is also called Winter's Method or Holt-Winters.
+This time series model is also known as single / double / triple exponential smoothing (depending on how many trends and seasonality include). 
+
+Triple exponential smoothing is also called Winter's Method or Holt-Winters.
+
 Exponential smoothing smoothes out randomness (peaks/valleys), and can also be used for forecasting. It is primarily used on the most recent data points, so it is better for short-term forecasting. 
 
 Our guess for next time period is the same as latest baseline estimate
