@@ -301,7 +301,7 @@ The difference between AIC and BIC:
   - e.g. R-squared = 80% , the model accounts for 80% of variability in the data & the rest are randomness or other factors 
 
 
-## [Advanced Regression](#Box-Cox)
+## [Advanced Regression](#Advanced Regression)
 
 We can use trees to divide data set, and speficy different modesl for each subset of the data. 
 
@@ -349,9 +349,7 @@ This model is useful when response is a probability (number between 0 and 1) and
 
 ![logit 4](https://latex.codecogs.com/gif.latex?a_%7B0%7D%20&plus;%20a_%7B1%7D%20x_%7B1%7D%20&plus;%20a_%7B2%7Dx_%7B2%7D%20&plus;%20...%20&plus;%20a_%7Bj%7Dx_%7Bj%7D%20%3D%20&plus;%5Cinfty%20%2C%20p%20%3D1)
 
-
-
-
+Logit model 
 
 
 
