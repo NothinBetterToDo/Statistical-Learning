@@ -358,11 +358,10 @@ Receiver Operating Characteristic (ROC) Curve to specifiy a threshold probabilit
 
 **Confusion Matrix**
 
-                   Model Classification
-| Classification | Yes | No |
+| Classification | Yes (Model) | No (Model) |
 | --------------- | --------------- | --------------- |
-| Yes| Correct | Row 1 Column 3 |
-| No | Row 2 Column 2 | Row 2 Column 3 |
+| Yes (True)| Correct | Incorrect |
+| No (True) | Incorrect| Correct |
 
 
 **References**
