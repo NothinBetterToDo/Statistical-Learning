@@ -1,2 +1,2 @@
 # Analytics-Modeling
-My Study Notes
+Short Notes on different techniques and modeling. 
