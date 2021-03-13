@@ -1,4 +1,4 @@
-## [Box-Cox Transformation](#Box-Cox)
+## [Box-Cox Transformation](#Box-Cox-Transformation)
 
 Some machine learning models assume data is normally distributed. Therefore, results will be biased when this assumption is not met. The unequal variance in a data is called heteroscedasticity. Higher variance in certain data points will make those estimation erros larger and push a model to fit those points. 
 
@@ -301,7 +301,7 @@ The difference between AIC and BIC:
   - e.g. R-squared = 80% , the model accounts for 80% of variability in the data & the rest are randomness or other factors 
 
 
-## [Advanced Regression](#Advanced Regression)
+## [Advanced Regression](#Advanced-Regression)
 
 We can use trees to divide data set, and speficy different modesl for each subset of the data. 
 
