@@ -11,6 +11,34 @@ It can be detected using:
 1. Automated methods e.g. box-and-whisker
 2. Modeling error e.g. fit exponential smoothing model, and points with very large error might be outlier
 
+## [Variable Selection](#Variable-Selection)
+
+There are 2 main reasons for limiting number of factors in model:
+- overfitting, esp. when number of factors > data points & the model might fit too closely to random effects
+- simplicity: less data required, less chance of insignificant factors, easier to interpret
+
+**Forward Selection**
+
+Forward selection is a type of stepwise regression, which begins with an empty model and a variable is added one at a time to fit a model. Factors with high p-value (p > 0.05) will be removed, and the final set of factors will be used to fit the model. 
+
+**Backward Selection**
+
+Backward selection involes starting with all candidate variables, and removing insignificant factors. This continues until we have no more bad factors (e.g. p > 0.15) to remove. 
+
+**Stepwise Regression**
+
+There are many types of stepwise regression. Stepwise regression that involves both forward and backward elimination method, is one of the methods. This also known as greedy algorithm, because it takes one step that looks best & future options are not considered. 
+
+**Lasso Regression**
+
+
+
+![lasso min](https://latex.codecogs.com/gif.latex?min%20%5Csum_%7Bn%7D%5E%7Bi%3D1%7D%20%28y_%7Bi%7D%20-%20%28a_%7B0%7D%20&plus;%20a_%7Bi%7Dx_%7B1i%7D%20&plus;%20a_%7Bi%7Dx_%7B2i%7D%20&plus;%20.....%20&plus;%20a_%7Bj%7Dx_%7Bji%7D%20%29%29%5E%7B2%7D)
+
+
+**Elastic Net**
+
+
 ## [Change Detection](#Change-Detection)
 
 Change detection method is necessary to find out when changes happen and determine if we need an action, impact of past action, or changes to the current plan. One of the methods we can use to detect changes is to use cumulative sum (CUSUM). 
@@ -565,8 +593,8 @@ It is important in investment e.g. traditional portfolio optimization model, whe
 | --------------- | --------------- | 
 | Variances, squared errors | Observations, linear errors | 
 | Raw variances | Differences in variances |
-
 <br />
+
 
 
 
