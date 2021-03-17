@@ -31,12 +31,24 @@ There are many types of stepwise regression. Stepwise regression that involves b
 
 **Lasso Regression**
 
-
+We add a constraint to a standard regression equation, and use it on the most important coefficients. In order to that, we will need to scale the data. 
 
 ![lasso min](https://latex.codecogs.com/gif.latex?min%20%5Csum_%7Bn%7D%5E%7Bi%3D1%7D%20%28y_%7Bi%7D%20-%20%28a_%7B0%7D%20&plus;%20a_%7Bi%7Dx_%7B1i%7D%20&plus;%20a_%7Bi%7Dx_%7B2i%7D%20&plus;%20.....%20&plus;%20a_%7Bj%7Dx_%7Bji%7D%20%29%29%5E%7B2%7D)
 
 
+We can choose t based on number of variables and quality of the model. We can also use lasso method to determine the best trade-off. 
+
+![lasso threshold](https://latex.codecogs.com/gif.latex?s.t.%20%5Csum_%7Bj%7D%5E%7Bi%3D1%7D%20%7Ca_%7Bi%7D%7C%20%5Cleq%20%5Ctau)
+
+
 **Elastic Net**
+
+Elastic net applies contraints on absolute value of coefficients and their squares. We will need to scale the data beforehand, and choose the appropriate t and lambda. 
+
+![elastic net min](https://latex.codecogs.com/gif.latex?Min%20%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%20%28y_%7Bi%7D%20-%20%28a_%7B0%7D%20&plus;%20a_%7B1%7Dx_%7B1i%7D%20&plus;%20a_%7B2%7Dx_%7B2i%7D%20&plus;%20....%20&plus;%20a_%7Bj%7Dx_%7Bji%7D%29%29%5E%7B2%7D)
+
+
+![]()
 
 
 ## [Change Detection](#Change-Detection)
