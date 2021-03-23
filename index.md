@@ -48,7 +48,9 @@ Elastic net applies contraints on absolute value of coefficients and their squar
 ![elastic net min](https://latex.codecogs.com/gif.latex?Min%20%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%20%28y_%7Bi%7D%20-%20%28a_%7B0%7D%20&plus;%20a_%7B1%7Dx_%7B1i%7D%20&plus;%20a_%7B2%7Dx_%7B2i%7D%20&plus;%20....%20&plus;%20a_%7Bj%7Dx_%7Bji%7D%29%29%5E%7B2%7D)
 
 
-![]()
+
+![elastic threshold](https://latex.codecogs.com/gif.latex?s.t%20%5Clambda%20%5Csum_%7Bi%3D1%7D%5E%7Bj%7D%7Ca_%7Bi%7D%7C%20&plus;%20%281-%5Clambda%29%5Csum_%7Bi%3D1%7D%5E%7Bj%7Da%5E%7B2%7D%20%5Cleq%20%5Ctau)
+
 
 
 ## [Change Detection](#Change-Detection)
