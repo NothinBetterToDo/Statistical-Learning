@@ -1,2 +1,2 @@
 # Analytics-Modeling
-Short Notes on different techniques and modeling. 
+Probability based models, parametric & non-parametric statistical tests. 
