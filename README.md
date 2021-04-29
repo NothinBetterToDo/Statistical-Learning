@@ -1,4 +1,4 @@
-# ANALYTICS-MODELLING
+# STATISTICAL-LEARNING
 > Probability based models, parametric & non-parametric statistical tests
 
 ## Table of contents
